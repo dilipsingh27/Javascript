@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h3>hii</h3>
+   <!-- inline Javascript -->
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+    <button onclick="alert('hello world')">Click Me</button>
+
+    <br><br>
+
+<!--     internal javascript -->
+    <button class="btn">random button</button>
+    <button class="btn">random button</button>
+    <button class="btn">random button</button>
+    <button class="btn">random button</button>
+    <button class="btn">random button</button>
+    <button class="btn">random button</button>
+    <button class="btn">random button</button>
+
+    <!-- one can notice that for changing the content to be displayed on clicking the button , no need to change it in each 
+    button you can change that only in the addEventListener alert and this will apply to all button with class name matching -->
+    <script>
+        document.querySelectorAll(".btn").forEach((item) => {
+            item.addEventListener('click', () => {
+                alert('this is awesome')
+            })
+        })
+    </script>
+
+</body>
+</html>
